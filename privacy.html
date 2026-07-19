@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — ScuttleBuddy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="wordmark"><span class="crab">🦀</span> ScuttleBuddy</a>
+    <nav class="links">
+      <a href="index.html#commands">Commands</a>
+      <a href="index.html#showcase">See it in action</a>
+      <a href="privacy.html">Privacy &amp; Terms</a>
+    </nav>
+    <a class="btn btn-primary" href="#">Add to Discord</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap legal-page">
+    <span class="eyebrow">Legal</span>
+    <h1>Privacy Policy</h1>
+    <p class="legal-updated">Last updated: July 2026</p>
+
+    <div class="legal-body">
+      <p>Your privacy is important to us. This Privacy Policy explains what data ScuttleBuddy ("the Bot") collects, how it is stored, and how it is used when you interact with the Bot.</p>
+
+      <h3>1. Data We Collect</h3>
+      <p>To provide League of Legends statistics and leaderboards, ScuttleBuddy collects and stores the following information:</p>
+      <ul>
+        <li><strong>Discord User ID:</strong> Automatically collected when you use commands or use <code>/register</code>.</li>
+        <li><strong>Discord Server (Guild) ID &amp; Channel IDs:</strong> Stored when an administrator configures the bot using <code>/setleaderboardchannel</code> to know where to post weekly summaries.</li>
+        <li><strong>Riot Games Data:</strong> When you use <code>/register</code>, we collect and store your Riot ID (Game Name and Tagline) and your unique Riot Puuid (Player Universal Unique Identifier) provided by the official Riot Games API.</li>
+        <li><strong>Match History Metadata:</strong> Temporary or aggregated match statistics (KDA, CS, win/loss, gold, damage) are processed to calculate server leaderboards and weekly superlative "meme stats."</li>
+      </ul>
+
+      <h3>2. How We Use Your Data</h3>
+      <p>We use the collected data strictly to power the Bot's core features:</p>
+      <ul>
+        <li>Linking your Discord identity to your Riot Games profile via <code>/register</code>.</li>
+        <li>Fetching and formatting match recaps for <code>/lastgame</code>.</li>
+        <li>Aggregating and ranking server statistics for the <code>/leaderboard</code> and the automated Monday <code>/memestats</code>.</li>
+      </ul>
+
+      <h3>3. Data Storage and Retention</h3>
+      <ul>
+        <li>Your linked Discord ID, Riot ID, and server configuration settings are stored securely in our database.</li>
+        <li>Match history data is heavily aggregated. We do not permanently store your lifelong match history; we only retain the data points necessary to process active weekly server stats.</li>
+        <li>If you wish to delete your data from our database, you can contact the developer (see Section 6) or unregister your account (if a <code>/unregister</code> command is available).</li>
+      </ul>
+
+      <h3>4. Data Sharing and Third Parties</h3>
+      <ul>
+        <li><strong>Riot Games API:</strong> We send your Riot ID/Puuid to Riot Games APIs to fetch your public match data.</li>
+        <li><strong>Public Display:</strong> Your public League of Legends stats, username, and performance metrics will be visible to other members of the Discord servers you share with the Bot via leaderboard commands.</li>
+      </ul>
+      <p>We <strong>never</strong> sell, rent, or trade your data to third-party companies or advertisers.</p>
+
+      <h3>5. Security</h3>
+      <p>We implement reasonable technical measures to safeguard your data. However, please remember that no method of transmission over the internet or electronic database storage is 100% secure.</p>
+
+      <h3>6. Contact and Data Removal</h3>
+      <p>If you have any questions about this Privacy Policy, or if you want to request the complete removal of your server data or user data from our systems, please contact the developer via our official Support Server: <a href="https://discord.gg/Jfhns5WCDb">discord.gg/Jfhns5WCDb</a>.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-row">
+      <a href="index.html" class="wordmark" style="font-size: 1.1rem;"><span class="crab">🦀</span> ScuttleBuddy</a>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="https://discord.gg/Jfhns5WCDb">Support Server</a>
+        <a href="#">Add to Discord</a>
+      </div>
+    </div>
+    <p class="footer-note">
+      ScuttleBuddy isn't endorsed by Riot Games and doesn't reflect the views or
+      opinions of Riot Games or anyone officially involved in producing or managing
+      League of Legends. League of Legends and Riot Games are trademarks or registered
+      trademarks of Riot Games, Inc.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

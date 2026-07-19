@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ScuttleBuddy — League of Legends Discord Bot</title>
+<meta name="description" content="ScuttleBuddy tracks your League of Legends games, posts weekly leaderboards, and keeps your server's rivalry alive.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ripple-field" aria-hidden="true">
+  <svg viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice">
+    <circle class="ripple" cx="620" cy="180" r="20"></circle>
+    <circle class="ripple" cx="620" cy="180" r="20"></circle>
+    <circle class="ripple" cx="620" cy="180" r="20"></circle>
+  </svg>
+</div>
+
+<header>
+  <div class="nav">
+    <a href="#top" class="wordmark"><span class="crab">🦀</span> ScuttleBuddy</a>
+    <nav class="links">
+      <a href="#commands">Commands</a>
+      <a href="#showcase">See it in action</a>
+      <a href="privacy.html">Privacy &amp; Terms</a>
+    </nav>
+    <a class="btn btn-primary" href="#">Add to Discord</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <span class="eyebrow">League of Legends · Discord Bot</span>
+        <h1>Your server's <span class="accent">stat tracker</span>,<br>hype man, and rival.</h1>
+        <p class="hero-sub">
+          ScuttleBuddy watches your games, posts weekly leaderboards, calls out your
+          losing streaks, and settles the "who's actually good" argument with real data —
+          right inside your Discord server.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#">Add to Discord</a>
+          <a class="btn btn-ghost" href="#commands">See all commands</a>
+        </div>
+      </div>
+
+      <div class="recap-card">
+        <div class="recap-title">
+          <span>Post-Game Recap</span>
+          <span class="recap-result">VICTORY</span>
+        </div>
+        <div class="recap-grid">
+          <div class="recap-stat"><span class="label">KDA</span><span class="value">9 / 2 / 11</span></div>
+          <div class="recap-stat"><span class="label">CS</span><span class="value">214</span></div>
+          <div class="recap-stat"><span class="label">Damage</span><span class="value">31,402</span></div>
+          <div class="recap-stat"><span class="label">Gold</span><span class="value">15,880</span></div>
+          <div class="recap-stat"><span class="label">Champion</span><span class="value">Ahri</span></div>
+          <div class="recap-stat"><span class="label">Duration</span><span class="value">28m</span></div>
+        </div>
+        <div class="recap-divider"></div>
+        <div class="recap-alert">
+          <span class="tag">STREAK</span>
+          5-game win streak — who's letting you win?
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section id="commands">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What it does</span>
+        <h2>Every command, grouped by what your server actually asks for.</h2>
+        <p class="section-sub">
+          Register your Riot account once, and ScuttleBuddy keeps everything else running
+          in the background — syncing match history, watching for new games, and posting
+          to your leaderboard channel automatically.
+        </p>
+      </div>
+
+      <div class="cmd-groups">
+        <div class="cmd-group">
+          <h3>Track &amp; Compare</h3>
+          <ul class="cmd-list">
+            <li><span class="cmd-name">/register</span><span class="cmd-desc">Link your Discord account to your Riot ID and region.</span></li>
+            <li><span class="cmd-name">/lastgame</span><span class="cmd-desc">Full recap of your (or anyone's) most recent match.</span></li>
+            <li><span class="cmd-name">/leaderboard</span><span class="cmd-desc">Server rankings by win rate, KDA, rank, and more.</span></li>
+            <li><span class="cmd-name">/compare</span><span class="cmd-desc">Head-to-head weekly stats between two players.</span></li>
+            <li><span class="cmd-name">/nemesis</span><span class="cmd-desc">The enemy champion that beats you the most.</span></li>
+            <li><span class="cmd-name">/duo</span><span class="cmd-desc">Win rate when two specific players queue together.</span></li>
+            <li><span class="cmd-name">/whoshouldiplay</span><span class="cmd-desc">Champion suggestions from your own win-rate data.</span></li>
+          </ul>
+        </div>
+
+        <div class="cmd-group">
+          <h3>Live Alerts</h3>
+          <ul class="cmd-list">
+            <li><span class="cmd-name">/streak</span><span class="cmd-desc">Check anyone's current win or loss streak.</span></li>
+            <li><span class="cmd-name">Auto-alerts</span><span class="cmd-desc">Posts on win/loss streaks, rank changes, and standout games — no command needed.</span></li>
+          </ul>
+        </div>
+
+        <div class="cmd-group">
+          <h3>Honeyfruit Betting</h3>
+          <ul class="cmd-list">
+            <li><span class="cmd-name">/openbet</span><span class="cmd-desc">Open betting on your own next game.</span></li>
+            <li><span class="cmd-name">/bet</span><span class="cmd-desc">Wager Honeyfruit on someone's open game.</span></li>
+            <li><span class="cmd-name">/honeyfruit</span><span class="cmd-desc">Check your (fake currency) balance.</span></li>
+            <li><span class="cmd-name">/dailybonus</span><span class="cmd-desc">Claim a daily Honeyfruit top-up.</span></li>
+          </ul>
+        </div>
+
+        <div class="cmd-group">
+          <h3>Fun &amp; Admin</h3>
+          <ul class="cmd-list">
+            <li><span class="cmd-name">/randomchamp</span><span class="cmd-desc">Random champion with a fully legal rune page.</span></li>
+            <li><span class="cmd-name">/memestats</span><span class="cmd-desc">Weekly superlatives — most deaths, best KDA, and more.</span></li>
+            <li><span class="cmd-name">/teamcomp</span><span class="cmd-desc">Random champion &amp; position assignment for your lobby.</span></li>
+            <li><span class="cmd-name">/setleaderboardchannel</span><span class="cmd-desc">Choose where weekly posts show up (admin).</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="showcase">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">See it in action</span>
+        <h2>What your channel actually sees.</h2>
+        <p class="section-sub">Example output shown with placeholder data.</p>
+      </div>
+
+      <div class="showcase-grid">
+        <div class="embed-card">
+          <div class="embed-title">🏆 Leaderboard — Win Rate</div>
+          <div class="embed-line"><strong>1.</strong> RatKingDing#4269 — 68% (17/25)</div>
+          <div class="embed-line"><strong>2.</strong> JTvsWorld#NA1 — 61% (14/23)</div>
+          <div class="embed-line"><strong>3.</strong> SupportMain#UTIL — 55% (11/20)</div>
+        </div>
+        <div class="embed-card">
+          <div class="embed-title">🎭 Weekly Meme Stats</div>
+          <div class="embed-line">💀 <strong>Most Deaths</strong> — SupportMain, 14 on Lulu</div>
+          <div class="embed-line">⭐ <strong>Best KDA</strong> — RatKingDing, 12.0 on Ahri</div>
+          <div class="embed-line">🍗 <strong>Inter of the Week</strong> — JTvsWorld, 1.2 KDA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta-strip">
+        <h2>Add ScuttleBuddy to your server.</h2>
+        <p class="section-sub">Free to use. Takes one click, no setup required to get started.</p>
+        <a class="btn btn-primary" href="#">Add to Discord</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="legal">
+  <div class="wrap">
+    <div class="footer-row">
+      <a href="#top" class="wordmark" style="font-size: 1.1rem;"><span class="crab">🦀</span> ScuttleBuddy</a>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="https://discord.gg/Jfhns5WCDb">Support Server</a>
+        <a href="#">Add to Discord</a>
+      </div>
+    </div>
+    <p class="footer-note">
+      ScuttleBuddy isn't endorsed by Riot Games and doesn't reflect the views or
+      opinions of Riot Games or anyone officially involved in producing or managing
+      League of Legends. League of Legends and Riot Games are trademarks or registered
+      trademarks of Riot Games, Inc.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
